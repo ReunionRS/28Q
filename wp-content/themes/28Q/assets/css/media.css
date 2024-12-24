@@ -1,0 +1,360 @@
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav img{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    nav ul li{
+        margin: 0.5rem 0;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        height: 100vh;
+        width: 250px;
+        padding-top: 50px;
+        z-index: 1000;
+    }
+    #nav-menu img{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .our_cases h1{
+        font-size: 1.7rem;
+    }
+    .switch_category h2 {
+        font-size: 1.3rem;
+    }
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content > * {
+        margin-bottom: 1rem;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    .general {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    nav {
+        width: 95%;
+    }
+    nav ul li {
+        font-size: 1.1rem;
+        margin: 0 1.2rem;
+    }
+    nav img{
+        margin-left: 1.5rem;
+    }
+    .our_cases h1{
+        font-size: 1.8rem;
+    }
+    .switch_category h2 {
+        font-size: 1.4rem;
+    }
+    .cases-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+    .general {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    nav {
+        width: 90%;
+    }
+    nav ul li {
+        font-size: 1.1rem;
+        margin: 0 1.3rem;
+        text-align: center;
+    }
+    nav img{
+        margin-left: 1.5rem;
+    }
+    .our_cases h1{
+        font-size: 1.9rem;
+    }
+    .switch_category h2 {
+        font-size: 1.4rem;
+    }
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+    .general {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 1301px) {
+    nav {
+        width: 80%;
+    }
+    nav ul li {
+        font-size: 1.2rem;
+        margin: 0 1.5rem;
+    }
+    nav img{
+        margin-left: 2rem;
+    }
+    .our_cases h1{
+        font-size: 2rem;
+    }
+    .switch_category h2 {
+        font-size: 1.5rem;
+    }
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+    .general {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us-alt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us-alt-item {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .why-us-alt-icon{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .why-us-alt-text{
+        text-align: center;
+    }
+
+    .content-types-grid {
+        grid-template-columns: 1fr;
+    }
+    .content-types-items-group {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form .container-form {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+
+    }
+    .form-wrapper, .contact-form img {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .contact-form img {
+        display: none;
+    }
+    .contact-form h2 {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .form-wrapper {
+        width: 50%;
+        margin-left: 5%;
+    }
+    .contact-form img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .form-wrapper {
+        width: 30%;
+        margin-left: 15%;
+    }
+
+    .contact-form img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto 20px;
+    }
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .map-container iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .map-container iframe {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map-container iframe {
+        width: 48rem;
+        height: 47rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cases-item-preview {
+        height: 200px;
+    }
+    .cases-open-modal-btn{
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-company {
+        padding: 30px 0;
+    }
+
+    .about-company-logo {
+        height: 180px;
+        margin-right: 15px;
+    }
+    .about-company-text {
+        max-width: 100%;
+    }
+
+    .about-company-text h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .about-company-text p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .how-we-work {
+        padding: 30px 0;
+    }
+    .how-we-work h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .how-we-work-steps {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .why-us {
+        padding: 30px 0;
+    }
+    .why-us h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .why-us-items {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-company {
+        padding: 40px 0;
+    }
+
+    .about-company-logo {
+        height: 200px;
+        margin-right: 20px;
+    }
+    .about-company-text {
+        max-width: 100%;
+    }
+
+    .about-company-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .about-company-text p {
+        font-size: 1.0rem;
+        margin-bottom: 10px;
+    }
+    .how-we-work {
+        padding: 40px 0;
+    }
+    .how-we-work h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    .how-we-work-steps {
+        grid-gap: 20px;
+    }
+    .why-us {
+        padding: 40px 0;
+    }
+    .why-us h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    .why-us-items {
+        grid-gap: 20px;
+    }
+}
+
